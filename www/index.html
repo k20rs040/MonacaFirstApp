@@ -21,6 +21,7 @@
     <script src="js/keys.js"></script>
     <script src="js/tapGame.js"></script>
     <script src="js/ranking.js"></script>
+    <script src="js/play.js"></script>
 </head>
 <body>
     <!-- ゲーム画面 -->
@@ -32,6 +33,8 @@
         <div data-role="content">
             <form name="gameForm">
                 <input type="button" value="ランキングを見る" name="ranking" onclick="toRanking()" />
+                <input type="button" value="遊び方を見る"
+                name="play" onclick="toPlay()" />
                 <center>
                     <h1>連打アプリ</h1>
                 </center>
@@ -108,6 +111,22 @@
                         <td id = "name_10" align="center" width="150">-</td>
                     </tr>
                 </table> 
+            </center>
+        </div>
+    </div>
+
+    <!-- 遊び方画面 -->
+    <div data-role="page" id="play-page">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1></h1>
+            <a href="#list-page" data-icon="back" class="ui-btn-left">戻る</a>
+        </div>
+        <div data-role="content">
+            <center>
+                <h1>遊び方</h1><br/>
+                <h3>1.的を連打して得点を取ろう！</h3>
+                <h3>2.早く押して高得点を目指そう!</h3>
+                <h3>３.順位順にランキングに表示されるよ！</h3>
             </center>
         </div>
     </div>
