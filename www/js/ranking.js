@@ -21,7 +21,7 @@ function checkRanking() {
     var highScore = ncmb.DataStore("GameScore");
     //scoreの降順でデータを5件取得する設定
     highScore.order("score", true)
-             .limit(5)
+             .limit(10)
              .fetchAll()
              .then(function(results){
                  //検索に成功した時
