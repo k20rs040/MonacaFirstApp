@@ -22,8 +22,42 @@
     <script src="js/tapGame.js"></script>
     <script src="js/ranking.js"></script>
     <script src="js/play.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
+      <!-- ログインページ -->
+  <div data-role="page" id="LoginPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>アプリデモ</h1>
+    </header>
+      <section data-role="content">
+      <h1>ログイン</h1>
+      ユーザー名
+        <input type="text" id="login_username">
+      パスワード
+        <input type="password" id="login_password">
+      新規登録？
+        <a href="#RegisterPage" data-role="button" data-mini="true" data-inline="true" data-theme="b">登録</a>
+        <a href="#" id="LoginBtn" data-role="button" data-inline="false" data-theme="b">ログインする</a>
+      </section>
+  </div>
+  
+  <!-- 登録ページ -->
+  <div data-role="page" id="RegisterPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>アプリデモ</h1>
+    </header>
+      <section data-role="content">
+      <h1>新規登録</h1>
+      ユーザー名
+        <input type="text" id="reg_username">
+      パスワード
+        <input type="password" id="reg_password">
+        <a href="#" id="RegisterBtn" data-role="button" data-inline="false" data-theme="b">登録する</a>
+        <a href="#LoginPage" data-role="button" data-mini="true" data-inline="true" data-theme="b">戻る</a>
+      </section>
+  </div>
+
     <!-- ゲーム画面 -->
     <div data-role="page" id="list-page">
         <div data-role="header" data-position="fixed" data-theme="c">
